@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Services - PixelPenta</title>
+    <link rel="stylesheet" href="/Css/pterodactyl-pricing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-container"></div>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="../index.html">PixelPenta</a>
+        </div>
+        <div class="nav-menu">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../index.html#about" class="nav-link">About</a>
+            <a href="../index.html#products" class="nav-link">Products</a>
+            <a href="../index.html#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero-pricing">
+            <div class="back-button">
+                <a href="../index.html#products" class="back-link">
+                    <span class="back-arrow">←</span> Back to Products
+                </a>
+            </div>
+            <div class="hero-content">
+                <div class="product-hero">
+                    <div class="product-icon">🎨</div>
+                    <h1 class="product-title">Graphic Design Services</h1>
+                    <p class="product-description">Professional graphic design solutions for all your visual communication needs</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-section">
+            <div class="section-header">
+                <h2 class="section-title">Design Packages</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card basic">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Basic Design</h3>
+                        <div class="plan-price">
+                            <span class="currency">Rp</span>
+                            <span class="price">25.000</span>
+                            <span class="period">/design</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>✓ Logo Design (Simple)</li>
+                            <li>✓ Business Card Design</li>
+                            <li>✓ Simple Poster/Flyer</li>
+                            <li>✓ Social Media Post Design</li>
+                            <li>✓ 2 Revision Rounds</li>
+                            <li>✓ PNG/JPG Format</li>
+                            <li>✓ 3-5 Days Delivery</li>
+                        </ul>
+                    </div>
+                    <button class="order-btn" onclick="openOrderModal('basic')">Order Now</button>
+                </div>
+
+                <div class="pricing-card premium featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Premium Design</h3>
+                        <div class="plan-price">
+                            <span class="currency">Rp</span>
+                            <span class="price">50.000</span>
+                            <span class="period">/design</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>✓ Professional Logo + Variations</li>
+                            <li>✓ Complete Brand Identity</li>
+                            <li>✓ Marketing Materials Design</li>
+                            <li>✓ Social Media Templates</li>
+                            <li>✓ Unlimited Revisions</li>
+                            <li>✓ All File Formats (AI, PSD, PNG, JPG)</li>
+                            <li>✓ 2-3 Days Delivery</li>
+                            <li>✓ Free Brand Guidelines</li>
+                        </ul>
+                    </div>
+                    <button class="order-btn" onclick="openOrderModal('premium')">Order Now</button>
+                </div>
+
+                <div class="pricing-card pro">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Complete Package</h3>
+                        <div class="plan-price">
+                            <span class="currency">Rp</span>
+                            <span class="price">100.000</span>
+                            <span class="period">/package</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>✓ Full Brand Identity Suite</li>
+                            <li>✓ Logo + 5 Variations</li>
+                            <li>✓ Business Stationery Set</li>
+                            <li>✓ Marketing Campaign Materials</li>
+                            <li>✓ Social Media Kit (10 Templates)</li>
+                            <li>✓ Packaging Design (if needed)</li>
+                            <li>✓ Source Files + Brand Guidelines</li>
+                            <li>✓ 24-48 Hours Delivery</li>
+                            <li>✓ 3 Months Support</li>
+                        </ul>
+                    </div>
+                    <button class="order-btn" onclick="openOrderModal('pro')">Order Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Our Design Services?</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Creative Excellence</h3>
+                    <p>Unique and innovative designs tailored to your brand identity and target audience</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick turnaround times without compromising on quality and attention to detail</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Unlimited Revisions</h3>
+                    <p>We work with you until you're 100% satisfied with the final design</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <h3>Multi-Platform Ready</h3>
+                    <p>Designs optimized for print, web, and social media platforms</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Professional Tools</h3>
+                    <p>Using industry-standard software like Adobe Creative Suite for best results</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💬</div>
+                    <h3>Dedicated Support</h3>
+                    <p>Direct communication and support throughout the entire design process</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What design services do you offer?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer comprehensive graphic design services including logo design, brand identity, marketing materials, social media graphics, packaging design, and complete brand guideline development.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How long does the design process take?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Delivery times vary by package: Basic designs take 3-5 days, Premium designs 2-3 days, and Complete packages 24-48 hours. Rush orders can be accommodated for an additional fee.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What file formats will I receive?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>File formats depend on your package. Basic includes PNG/JPG, Premium adds AI/PSD files, and Complete package includes all source files plus various export formats for different uses.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I request changes to my design?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Basic package includes 2 revision rounds, while Premium and Complete packages offer unlimited revisions until you're completely satisfied with the result.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do you provide brand guidelines?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Premium and Complete packages include comprehensive brand guidelines covering logo usage, color palettes, typography, and application examples to maintain brand consistency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Order Design Service</h2>
+                <span class="close-modal" onclick="closeOrderModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label>Selected Package:</label>
+                        <input type="text" id="selectedPlan" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerName">Nama Lengkap *</label>
+                        <input type="text" id="customerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerEmail">Email *</label>
+                        <input type="email" id="customerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPhone">Nomor WhatsApp *</label>
+                        <input type="tel" id="customerPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="businessName">Nama Bisnis/Brand</label>
+                        <input type="text" id="businessName" placeholder="Contoh: Toko Kopi Bahagia">
+                    </div>
+                    <div class="form-group">
+                        <label for="designType">Jenis Design yang Dibutuhkan</label>
+                        <select id="designType">
+                            <option value="logo">Logo Design</option>
+                            <option value="brand-identity">Brand Identity</option>
+                            <option value="marketing">Marketing Materials</option>
+                            <option value="social-media">Social Media Graphics</option>
+                            <option value="packaging">Packaging Design</option>
+                            <option value="print">Print Design</option>
+                            <option value="other">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="designBrief">Brief Design</label>
+                        <textarea id="designBrief" rows="4" placeholder="Jelaskan konsep, warna favorit, style yang diinginkan, target audience, dll..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="deadline">Deadline (Opsional)</label>
+                        <input type="date" id="deadline">
+                    </div>
+                    <div class="form-group">
+                        <label for="additionalNotes">Catatan Tambahan</label>
+                        <textarea id="additionalNotes" rows="3" placeholder="Referensi design, permintaan khusus, atau informasi lainnya..."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+                        <button type="submit" class="submit-btn">Order via WhatsApp</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">PixelPenta</div>
+            <div class="footer-text">
+                <p>&copy; 2025 PixelPenta. Creative design solutions.</p>
+                <p>All rights reserved. Made with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/Js/pterodactyl-pricing.js"></script>
+</body>
+</html>

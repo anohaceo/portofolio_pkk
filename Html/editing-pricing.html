@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo/Video Editing Services - PixelPenta</title>
+    <link rel="stylesheet" href="/Css/pterodactyl-pricing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-container"></div>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">PixelPenta</a>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html#about" class="nav-link">About</a>
+            <a href="index.html#products" class="nav-link">Products</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero-pricing">
+            <div class="back-button">
+                <a href="index.html#products" class="back-link">
+                    <span class="back-arrow">←</span> Back to Products
+                </a>
+            </div>
+            <div class="hero-content">
+                <div class="product-hero">
+                    <div class="product-icon">🎬</div>
+                    <h1 class="product-title">Photo/Video Editing</h1>
+                    <p class="product-description">Professional photo and video editing services for stunning visual content</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-section">
+            <div class="section-header">
+                <h2 class="section-title">Editing Packages</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card basic">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Basic Editing</h3>
+                        <div class="plan-price">
+                            <span class="currency">Rp</span>
+                            <span class="price">15.000</span>
+                            <span class="period">/photo</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>✓ Photo Enhancement & Color Correction</li>
+                            <li>✓ Basic Retouching</li>
+                            <li>✓ Background Removal (Simple)</li>
+                            <li>✓ Brightness/Contrast Adjustment</li>
+                            <li>✓ Crop & Resize</li>
+                            <li>✓ JPG/PNG Format</li>
+                            <li>✓ 24-48 Hours Delivery</li>
+                        </ul>
+                    </div>
+                    <button class="order-btn" onclick="openOrderModal('basic')">Order Now</button>
+                </div>
+
+                <div class="pricing-card premium featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Premium Editing</h3>
+                        <div class="plan-price">
+                            <span class="currency">Rp</span>
+                            <span class="price">35.000</span>
+                            <span class="period">/project</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>✓ Advanced Photo/Video Editing</li>
+                            <li>✓ Professional Color Grading</li>
+                            <li>✓ Complex Background Replacement</li>
+                            <li>✓ Motion Graphics & Transitions</li>
+                            <li>✓ Audio Sync & Enhancement</li>
+                            <li>✓ Multiple Format Export</li>
+                            <li>✓ 2-3 Revision Rounds</li>
+                            <li>✓ 2-4 Days Delivery</li>
+                        </ul>
+                    </div>
+                    <button class="order-btn" onclick="openOrderModal('premium')">Order Now</button>
+                </div>
+
+                <div class="pricing-card pro">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Complete Production</h3>
+                        <div class="plan-price">
+                            <span class="currency">Rp</span>
+                            <span class="price">75.000</span>
+                            <span class="period">/project</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>✓ Full Video Production Editing</li>
+                            <li>✓ Cinematic Color Grading</li>
+                            <li>✓ Advanced Visual Effects</li>
+                            <li>✓ Custom Motion Graphics</li>
+                            <li>✓ Professional Audio Mixing</li>
+                            <li>✓ Multiple Video Formats</li>
+                            <li>✓ Unlimited Revisions</li>
+                            <li>✓ Source Files Included</li>
+                            <li>✓ 3-7 Days Delivery</li>
+                        </ul>
+                    </div>
+                    <button class="order-btn" onclick="openOrderModal('pro')">Order Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Our Editing Services?</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Professional Quality</h3>
+                    <p>Industry-standard editing using Adobe Premiere Pro, After Effects, and Photoshop</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Creative Vision</h3>
+                    <p>Bringing your ideas to life with artistic flair and technical expertise</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Turnaround</h3>
+                    <p>Quick delivery without compromising on quality and attention to detail</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Revision Support</h3>
+                    <p>Multiple revision rounds to ensure the final result meets your expectations</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <h3>Multi-Platform Ready</h3>
+                    <p>Optimized for social media, YouTube, Instagram, and other platforms</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Audio Enhancement</h3>
+                    <p>Professional audio editing, mixing, and background music integration</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What types of editing do you offer?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer comprehensive photo and video editing services including color correction, retouching, background removal, motion graphics, visual effects, audio editing, and complete video production editing.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What file formats do you accept?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept most common formats including JPG, PNG, RAW, MP4, MOV, AVI, and more. If you have a specific format, just let us know and we'll accommodate it.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How long does editing take?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Delivery times vary by complexity: Basic photo editing takes 24-48 hours, Premium projects 2-4 days, and Complete production 3-7 days. Rush orders available for additional fee.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I request specific styles or effects?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We encourage you to share references, mood boards, or specific style preferences. Our goal is to match your creative vision perfectly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do you provide raw/source files?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Source files are included with our Complete Production package. For other packages, source files can be provided for an additional fee upon request.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Order Editing Service</h2>
+                <span class="close-modal" onclick="closeOrderModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label>Selected Package:</label>
+                        <input type="text" id="selectedPlan" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerName">Nama Lengkap *</label>
+                        <input type="text" id="customerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerEmail">Email *</label>
+                        <input type="email" id="customerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPhone">Nomor WhatsApp *</label>
+                        <input type="tel" id="customerPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectType">Jenis Project</label>
+                        <select id="projectType">
+                            <option value="photo">Photo Editing</option>
+                            <option value="video">Video Editing</option>
+                            <option value="both">Photo & Video</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="editingStyle">Style/Genre</label>
+                        <select id="editingStyle">
+                            <option value="natural">Natural/Realistic</option>
+                            <option value="cinematic">Cinematic</option>
+                            <option value="vintage">Vintage/Retro</option>
+                            <option value="modern">Modern/Clean</option>
+                            <option value="artistic">Artistic/Creative</option>
+                            <option value="commercial">Commercial/Corporate</option>
+                            <option value="other">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectDetails">Detail Project</label>
+                        <textarea id="projectDetails" rows="4" placeholder="Jelaskan project Anda: jumlah foto/durasi video, style yang diinginkan, penggunaan akhir, dll..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="referenceLinks">Link Referensi (Opsional)</label>
+                        <input type="url" id="referenceLinks" placeholder="https://example.com/reference">
+                    </div>
+                    <div class="form-group">
+                        <label for="deadline">Deadline (Opsional)</label>
+                        <input type="date" id="deadline">
+                    </div>
+                    <div class="form-group">
+                        <label for="additionalNotes">Catatan Tambahan</label>
+                        <textarea id="additionalNotes" rows="3" placeholder="Permintaan khusus, format output yang diinginkan, atau informasi lainnya..."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+                        <button type="submit" class="submit-btn">Order via WhatsApp</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">PixelPenta</div>
+            <div class="footer-text">
+                <p>&copy; 2025 PixelPenta. Professional editing services.</p>
+                <p>All rights reserved. Made with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/Js/pterodactyl-pricing.js"></script>
+</body>
+</html>
