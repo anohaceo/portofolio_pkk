@@ -63,13 +63,13 @@ class AdvancedPortfolio {
             this.updateCursor(e);
         });
 
-        document.querySelectorAll('.social-card').forEach(card => {
+        document.querySelectorAll('.social-card, .product-card').forEach(card => {
             card.addEventListener('mouseenter', () => {
-                this.animateSocialCard(card, true);
+                this.animateCard(card, true);
             });
             
             card.addEventListener('mouseleave', () => {
-                this.animateSocialCard(card, false);
+                this.animateCard(card, false);
             });
         });
 
@@ -263,7 +263,7 @@ class AdvancedPortfolio {
             observer.observe(section);
         });
 
-        document.querySelectorAll('.skill-item, .gallery-item, .social-card, .product-card').forEach(element => {
+        document.querySelectorAll('.skill-item, .social-card, .product-card').forEach(element => {
             observer.observe(element);
         });
     }
@@ -404,33 +404,18 @@ class AdvancedPortfolio {
     }
 
     handleResize() {
-        if (window.innerWidth <= 768) {
-        } else {
-        }
+        // Handle resize events if needed
     }
 
-    animateGalleryItem(item, isHover) {
-        const overlay = item.querySelector('.gallery-overlay');
-        const image = item.querySelector('.gallery-image');
-        
-        if (isHover) {
-            item.style.transform = 'translateY(-10px) scale(1.02)';
-            image.style.filter = 'brightness(0.7)';
-        } else {
-            item.style.transform = 'translateY(0) scale(1)';
-            image.style.filter = 'brightness(1)';
-        }
-    }
-
-    animateSocialCard(card, isHover) {
+    animateCard(card, isHover) {
         const arrow = card.querySelector('.social-arrow');
         
         if (isHover) {
             card.style.transform = 'translateY(-5px)';
-            arrow.style.transform = 'translateX(5px)';
+            if (arrow) arrow.style.transform = 'translateX(5px)';
         } else {
             card.style.transform = 'translateY(0)';
-            arrow.style.transform = 'translateX(0)';
+            if (arrow) arrow.style.transform = 'translateX(0)';
         }
     }
 
@@ -471,45 +456,3 @@ class AdvancedPortfolio {
 document.addEventListener('DOMContentLoaded', () => {
     new AdvancedPortfolio();
 });
-
-const style = document.createElement('style');
-style.textContent = `
-    .animate-in {
-        animation: fadeInUp 0.8s ease forwards;
-    }
-    
-    .custom-cursor {
-        transition: transform 0.1s ease;
-    }
-    
-    .nav-menu.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.95);
-        padding: 1rem;
-        gap: 1rem;
-    }
-    
-    .nav-toggle.active span:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-    
-    .nav-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .nav-toggle.active span:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-    
-    @media (max-width: 768px) {
-        .nav-menu {
-            display: none;
-        }
-    }
-`;
-document.head.appendChild(style);
