@@ -484,6 +484,27 @@ window.toggleFAQ = function(element) {
     }
 };
 
+function redirectToWhatsApp(plan) {
+    let message = `*PESANAN PHOTO/VIDEO EDITING*\n\n`;
+    message += `✓ Saya ingin memesan paket: *${plan}*\n\n`;
+    message += ` Mohon diproses, terima kasih!`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/6282133886418?text=${encodedMessage}`;
+
+    window.open(whatsappURL, '_blank');
+}
+
+function redirectToWhatsApp2(plan) {
+    let message = `*PESANAN DESAIN GRAFIS*\n\n`;
+    message += `🎬 Saya ingin memesan paket: *${plan}*\n\n`;
+    message += `🚀 Mohon diproses, terima kasih!`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/6282143316071?text=${encodedMessage}`;
+
+    window.open(whatsappURL, '_blank');
+}
 // Add notification animations CSS
 const notificationCSS = `
 @keyframes slideInRight {
