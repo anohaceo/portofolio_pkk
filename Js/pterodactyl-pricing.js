@@ -490,7 +490,7 @@ function redirectToWhatsApp(plan) {
     message += ` Mohon diproses, terima kasih!`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/6282133886418?text=${encodedMessage}`;
+    const whatsappURL = `https://wa.me/6285640476286?text=${encodedMessage}`;
 
     window.open(whatsappURL, '_blank');
 }
@@ -501,7 +501,7 @@ function redirectToWhatsApp2(plan) {
     message += `🚀 Mohon diproses, terima kasih!`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/6282143316071?text=${encodedMessage}`;
+    const whatsappURL = `https://wa.me/6285600554738?text=${encodedMessage}`;
 
     window.open(whatsappURL, '_blank');
 }
@@ -549,4 +549,5 @@ document.head.appendChild(styleElement);
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     window.pterodactylPricingInstance = new PterodactylPricing();
+
 });
