@@ -484,18 +484,18 @@ window.toggleFAQ = function(element) {
     }
 };
 
-function redirectToWhatsApp(plan) {
-    let message = `*PESANAN PHOTO/VIDEO EDITING*\n\n`;
+function redirectToEdit(plan) {
+    let message = `*PESANAN EDIT FOTO/VIDEO*\n\n`;
     message += `✓ Saya ingin memesan paket: *${plan}*\n\n`;
     message += ` Mohon diproses, terima kasih!`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/6285640476286?text=${encodedMessage}`;
+    const whatsappURL = `https://wa.me/6285640476286text=${encodedMessage}`;
 
     window.open(whatsappURL, '_blank');
 }
 
-function redirectToWhatsApp2(plan) {
+function redirectToDesain(plan) {
     let message = `*PESANAN DESAIN GRAFIS*\n\n`;
     message += `🎬 Saya ingin memesan paket: *${plan}*\n\n`;
     message += `🚀 Mohon diproses, terima kasih!`;
@@ -551,3 +551,4 @@ document.addEventListener('DOMContentLoaded', () => {
     window.pterodactylPricingInstance = new PterodactylPricing();
 
 });
+
