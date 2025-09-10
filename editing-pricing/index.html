@@ -185,76 +185,6 @@
         </section>
     </div>
 
-    <!-- Order Modal -->
-    <div id="editingOrderModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Order Editing Service</h2>
-                <span class="close-modal" onclick="closeEditingOrderModal()">&times;</span>
-            </div>
-            <div class="modal-body">
-                <form id="editingOrderForm">
-                    <div class="form-group">
-                        <label>Selected Package:</label>
-                        <input type="text" id="selectedEditingPlan" value="Professional Editing - Rp 10K-20K" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label for="editingCustomerName">Nama Lengkap *</label>
-                        <input type="text" id="editingCustomerName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editingCustomerEmail">Email *</label>
-                        <input type="email" id="editingCustomerEmail" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editingCustomerPhone">Nomor WhatsApp *</label>
-                        <input type="tel" id="editingCustomerPhone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editingProjectType">Jenis Project</label>
-                        <select id="editingProjectType">
-                            <option value="photo">Photo Editing</option>
-                            <option value="video">Video Editing</option>
-                            <option value="both">Photo & Video</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="editingStyle">Style/Genre</label>
-                        <select id="editingStyle">
-                            <option value="natural">Natural/Realistic</option>
-                            <option value="cinematic">Cinematic</option>
-                            <option value="vintage">Vintage/Retro</option>
-                            <option value="modern">Modern/Clean</option>
-                            <option value="artistic">Artistic/Creative</option>
-                            <option value="commercial">Commercial/Corporate</option>
-                            <option value="other">Lainnya</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="editingProjectDetails">Detail Project</label>
-                        <textarea id="editingProjectDetails" rows="4" placeholder="Jelaskan project Anda: jumlah foto/durasi video, style yang diinginkan, penggunaan akhir, dll..."></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="editingReferenceLinks">Link Referensi (Opsional)</label>
-                        <input type="url" id="editingReferenceLinks" placeholder="https://example.com/reference">
-                    </div>
-                    <div class="form-group">
-                        <label for="editingDeadline">Deadline (Opsional)</label>
-                        <input type="date" id="editingDeadline">
-                    </div>
-                    <div class="form-group">
-                        <label for="editingAdditionalNotes">Catatan Tambahan</label>
-                        <textarea id="editingAdditionalNotes" rows="3" placeholder="Permintaan khusus, format output yang diinginkan, atau informasi lainnya..."></textarea>
-                    </div>
-                    <div class="form-actions">
-                        <button type="button" class="cancel-btn" onclick="closeEditingOrderModal()">Cancel</button>
-                        <button type="submit" class="submit-btn">Order via WhatsApp</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">PixelPenta</div>
@@ -282,4 +212,5 @@
 </body>
 
 </html>
+
 
