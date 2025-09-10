@@ -497,8 +497,8 @@ function redirectToWhatsapp(plan) {
 
 function redirectToDesain(plan) {
     let message = `*PESANAN DESAIN GRAFIS*\n\n`;
-    message += `🎬 Saya ingin memesan paket: *${plan}*\n\n`;
-    message += `🚀 Mohon diproses, terima kasih!`;
+    message += `✓  Saya ingin memesan paket: *${plan}*\n\n`;
+    message += ` Mohon diproses, terima kasih!`;
 
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://wa.me/6285600554738?text=${encodedMessage}`;
@@ -551,6 +551,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.pterodactylPricingInstance = new PterodactylPricing();
 
 });
+
 
 
 
