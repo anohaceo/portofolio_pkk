@@ -180,68 +180,6 @@
         </section>
     </div>
 
-    <!-- Order Modal -->
-    <div id="orderModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Order Design Service</h2>
-                <span class="close-modal" onclick="closeOrderModal()">&times;</span>
-            </div>
-            <div class="modal-body">
-                <form id="orderForm">
-                    <div class="form-group">
-                        <label>Selected Package:</label>
-                        <input type="text" id="selectedPlan" value="Professional Design - Rp 5.000 - 8.000" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label for="customerName">Nama Lengkap *</label>
-                        <input type="text" id="customerName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="customerEmail">Email *</label>
-                        <input type="email" id="customerEmail" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="customerPhone">Nomor WhatsApp *</label>
-                        <input type="tel" id="customerPhone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="businessName">Nama Bisnis/Brand</label>
-                        <input type="text" id="businessName" placeholder="Contoh: Toko Kopi Bahagia">
-                    </div>
-                    <div class="form-group">
-                        <label for="designType">Jenis Design yang Dibutuhkan</label>
-                        <select id="designType">
-                            <option value="logo">Logo Design</option>
-                            <option value="brand-identity">Brand Identity</option>
-                            <option value="marketing">Marketing Materials</option>
-                            <option value="social-media">Social Media Graphics</option>
-                            <option value="packaging">Packaging Design</option>
-                            <option value="print">Print Design</option>
-                            <option value="other">Lainnya</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="designBrief">Brief Design</label>
-                        <textarea id="designBrief" rows="4" placeholder="Jelaskan konsep, warna favorit, style yang diinginkan, target audience, dll..."></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="deadline">Deadline (Opsional)</label>
-                        <input type="date" id="deadline">
-                    </div>
-                    <div class="form-group">
-                        <label for="additionalNotes">Catatan Tambahan</label>
-                        <textarea id="additionalNotes" rows="3" placeholder="Referensi design, permintaan khusus, atau informasi lainnya..."></textarea>
-                    </div>
-                    <div class="form-actions">
-                        <button type="button" class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
-                        <button type="submit" class="submit-btn">Order via WhatsApp</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">PixelPenta</div>
@@ -311,6 +249,7 @@
 </body>
 
 </html>
+
 
 
 
