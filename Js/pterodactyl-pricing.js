@@ -484,7 +484,7 @@ window.toggleFAQ = function(element) {
     }
 };
 
-function redirectToEdit(plan) {
+function redirectToWhatsapp(plan) {
     let message = `*PESANAN EDIT FOTO/VIDEO*\n\n`;
     message += `✓ Saya ingin memesan paket: *${plan}*\n\n`;
     message += ` Mohon diproses, terima kasih!`;
@@ -551,4 +551,5 @@ document.addEventListener('DOMContentLoaded', () => {
     window.pterodactylPricingInstance = new PterodactylPricing();
 
 });
+
 
